@@ -3,13 +3,21 @@
 import numpy as np
 import numpy.random as rand
 import matplotlib.pyplot as plt
-from PLS import PLS
 import numpy.random as rand
 from scipy.stats import f
 from scipy.optimize import fsolve
 from scipy.stats import norm
 from scipy.stats import t
 
+import os
+import sys
+import inspect
+
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(0, parentdir) 
+
+from PLS import PLS
 
 # %%
 #define parameters

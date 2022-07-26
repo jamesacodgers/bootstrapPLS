@@ -43,7 +43,7 @@ def T_boot(x,pls):
     
 
 
-data = pd.read_csv("Vemavarapu_data.csv")
+data = pd.read_csv("Data/Vemavarapu_data.csv")
 
 X = np.array(data[['X1','X2','X3','X4','X5','X6']],dtype=float)
 
@@ -99,7 +99,7 @@ for i in range(pls.n_s):
 
 # %%
 
-
+scale = 1
 
 
 l = np.argsort(y_hat)
