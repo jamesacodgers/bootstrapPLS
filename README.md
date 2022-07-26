@@ -1,5 +1,5 @@
 # bootstrap PLS
-Files contain methods to produce Design Space (DS) and probabilisitc predictions. 
+Files contain methods to produce Design Space (DS) and probabilistic predictions. 
 
 ## Requirements 
 All the code was run on python 3.9.9 with the following package versions:
