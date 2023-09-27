@@ -230,7 +230,7 @@ class PLS:
     def boot_pdf(self,x,y):
         p = 0
         for i in range(self.n_b):
-            p += 1/self.n_b*multivariate_normal(self.boot_predict(x,i),self.boot_err_cov[i,0,0]).pdf(y)
+            p += 1/self.n_b*multivariate_normal(self.boot_predict(x,i),self.boot_err_cov[i,:,:]).pdf(y)
         return p
 
     def prediction_cdf(self,x,y):
